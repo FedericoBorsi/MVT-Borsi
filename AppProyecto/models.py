@@ -4,7 +4,7 @@ from django.db import models
 
 class Familia(models.Model):
     nombre_apellido = models.CharField(max_length = 50)
-    fecha_nacimiento = models.DateField(default= 14/5/2001)
+    año_nacimiento = models.IntegerField()
     dni = models.IntegerField()
 
 

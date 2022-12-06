@@ -11,9 +11,9 @@
     <h1>Lista de familiares:</h1>
 
         <ul>
-            {% for familiares in familia %}
-                <li>{{}}</li>
-
+            {% for familiar in familiares %}
+                <li>{{ familiar.nombre_apellido }} - {{ familiar.año_nacimiento }} - {{ familiar.dni }}</li>
+            {% endfor %}
         </ul>
 
 </body>
